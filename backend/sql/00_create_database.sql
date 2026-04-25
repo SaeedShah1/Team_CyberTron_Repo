@@ -1,0 +1,8 @@
+IF DB_ID(N'ConvoBankDB') IS NULL
+BEGIN
+  CREATE DATABASE ConvoBankDB;
+END;
+GO
+
+USE ConvoBankDB;
+GO

@@ -1,0 +1,222 @@
+# Hisaab Banking Chatbot — Cursor Rules
+
+## Project Overview
+Hisaab is a Pakistani banking chatbot demo. Node.js/Express backend + React/Vite frontend.
+AI is powered by OpenRouter (OpenAI-compatible API) using `google/gemini-2.0-flash-001`.
+Persistence is a single JSON file (`backend/data/db.json`) — no real database.
+
+---
+
+## Monorepo Layout
+
+```
+v2/
+├── backend/          # Node.js + Express (ESM, "type": "module")
+│   ├── src/
+│   │   ├── server.js            # Entry point — boots Express, registers routes
+│   │   ├── config/config.js     # All env vars in one place
+│   │   ├── auth/
+│   │   │   ├── authService.js   # bcrypt login, credential check
+│   │   │   └── sessions.js      # In-memory session Map, conversationHistory per session
+│   │   ├── chatbot/
+│   │   │   ├── geminiAgent.js   # AI agent: OpenRouter tool-calling loop, option inference
+│   │   │   ├── toolDefinitions.js  # OpenAI-format tool schemas (9 tools)
+│   │   │   ├── toolExecutor.js  # Routes tool names → backend operations, builds receipts
+│   │   │   ├── intentEngine.js  # Regex-based NLP: intent detection + entity extraction
+│   │   │   ├── flowUtils.js     # Text-matching helpers (accounts, beneficiaries, bills)
+│   │   │   └── flows/           # Legacy FSM flows (superseded by AI agent, kept for ref)
+│   │   ├── data/
+│   │   │   ├── repository.js    # All DB read/write ops; atomic JSON writes via writeChain
+│   │   │   └── seed.js          # Initial demo data (users, accounts, beneficiaries, bills, cards)
+│   │   ├── middleware/
+│   │   │   ├── requireSession.js  # Bearer token → session lookup; attaches req.session
+│   │   │   └── errorHandler.js    # Global error handler + 404
+│   │   ├── routes/
+│   │   │   ├── auth.js          # POST /api/auth/login, POST /api/auth/logout, GET /api/auth/me
+│   │   │   └── chat.js          # GET /api/chat/bootstrap, POST /api/chat
+│   │   ├── services/
+│   │   │   └── transactionService.js  # debitAccount() — updates balance + appends transaction
+│   │   └── utils/
+│   │       ├── errors.js        # AppError, SessionExpiredError
+│   │       ├── logger.js        # Structured console logger (INFO/WARN/ERROR)
+│   │       └── refId.js         # generateRefId(), formatPKR()
+│   ├── .env                     # Secrets (never commit)
+│   └── data/db.json             # Live JSON database (auto-seeded on first run)
+│
+└── frontend/         # React 18 + Vite + Tailwind CSS
+    └── src/
+        ├── main.jsx             # React entry
+        ├── App.jsx              # Auth gate: LoginScreen → ChatScreen
+        ├── screens/
+        │   ├── LoginScreen.jsx  # userId + password form
+        │   └── ChatScreen.jsx   # Main chat UI — messages, options, receipts, composer
+        ├── components/
+        │   ├── MessageBubble.jsx    # Chat bubble (user/assistant) + TypingIndicator
+        │   ├── ButtonOptions.jsx    # Horizontal scrollable option buttons
+        │   ├── Composer.jsx         # Always-enabled text input (disabled only while thinking)
+        │   ├── ReceiptCard.jsx      # Structured receipt cards for completed operations
+        │   ├── Header.jsx           # App header with session countdown
+        │   └── SessionExpiredOverlay.jsx
+        ├── hooks/useSessionTimer.js # Countdown timer, fires callback on expiry
+        ├── services/api.js          # fetch wrapper; token in sessionStorage
+        └── utils/format.js
+```
+
+---
+
+## API Endpoints
+
+| Method | Path | Auth | Description |
+|--------|------|------|-------------|
+| POST | `/api/auth/login` | — | `{ userId, password }` → `{ token, user, sessionTimeoutMs }` |
+| POST | `/api/auth/logout` | Bearer | Destroys session |
+| GET | `/api/auth/me` | Bearer | Returns `{ user }` |
+| GET | `/api/chat/bootstrap` | Bearer | Returns greeting + 5-button main menu; resets history |
+| POST | `/api/chat` | Bearer | `{ text?, optionValue? }` → `{ response: { messages, options, receipt }, sessionRemainingMs }` |
+| GET | `/health` | — | `{ status: "ok", uptime }` |
+
+---
+
+## AI Agent Architecture (`chatbot/geminiAgent.js`)
+
+The agent uses the OpenAI SDK pointed at OpenRouter:
+```js
+new OpenAI({ baseURL: 'https://openrouter.ai/api/v1', apiKey: config.openrouterApiKey })
+```
+
+**Tool-calling loop per turn:**
+1. Build messages = `[system, ...truncatedHistory, newUserMessage]`
+2. Call `client.chat.completions.create({ model, messages, tools, tool_choice: 'auto' })`
+3. If `message.tool_calls` → execute each via `executeTool()`, append `role: 'tool'` results, loop
+4. When model returns plain text → extract text, infer UI buttons, extract receipt, return
+
+**Session history format** (stored in `sessions.js`):
+- Everything except the system prompt — i.e., `messages.slice(1)` after each turn
+- System prompt is prepended fresh each request
+- Max 40 entries; always trimmed at a user-text boundary
+
+**Option inference** (`inferOptions(text, toolCallLog)`):
+- Confirmation question detected → Yes/No buttons
+- `getAccounts` with >1 account + "which account" text → account selection buttons
+- `getCards` with active cards + "which card" text → card selection buttons
+- Mutating tool succeeded → main menu (5 buttons)
+- Otherwise → null
+
+---
+
+## The 9 Tools
+
+| Tool | Mutates | Returns receipt |
+|------|---------|-----------------|
+| `getAccounts` | No | No |
+| `getBalance` | No | No |
+| `getBeneficiaries` | No | No |
+| `transferFunds` | Yes | `transfer_success` |
+| `getBills` | No | No |
+| `payBill` | Yes | `bill_success` |
+| `getTransactions` | No | `transaction_list` |
+| `getCards` | No | No |
+| `blockCard` | Yes | `card_blocked` |
+
+Mutating tools (`transferFunds`, `payBill`, `blockCard`) must only be called **after** explicit user confirmation ("yes", "haan", "confirm"). This is enforced in the system prompt and tool descriptions.
+
+---
+
+## Data Model (db.json)
+
+```js
+{
+  users: [{
+    userId, passwordHash, fullName, email,
+    accounts: [{ accountId, title, type, maskedNumber, balance, currency }],
+    beneficiaries: [{ id, nickname, fullName, bank, maskedNumber }]
+  }],
+  bills: [{ billerId, userId, billerName, category, accountNumber, currentDue, dueDate }],
+  transactions: [{ refId, userId, accountId, type, amount, description, timestamp, balanceAfter, meta }],
+  cards: [{ cardId, userId, accountId, type, network, last4, maskedNumber, expiryDate, status, blockedAt? }],
+  logs: [{ ts, userId, action, outcome, ...meta }]
+}
+```
+
+**Demo credentials:**
+- `user1` / `password123` — has 2 accounts, 3 beneficiaries, 2 bills, 3 cards
+- `user2` / `securepass456` — has 1 account, 1 card
+
+---
+
+## Frontend Chat Flow
+
+```
+App.jsx
+  └── LoginScreen  →  api.login()  →  tokenStore.set(token)  →  ChatScreen
+        └── useEffect: api.bootstrap() → greeting + 5 options
+              └── ChatScreen state:
+                    messages[]         — all bubbles
+                    activeOptions[]    — current button row (null = none)
+                    isThinking         — disables Composer + buttons
+              └── sendText(text) / sendOption(opt) → api.chat() → applyResponse()
+```
+
+**Composer** is always enabled (never gated on "expectsFreeText"). It is disabled only when `isThinking === true`.
+
+**ReceiptCard types:** `transfer_success`, `bill_success`, `card_blocked`, `transaction_list`
+
+---
+
+## Environment Variables (backend/.env)
+
+```
+PORT=4000
+NODE_ENV=development
+ALLOWED_ORIGINS=http://localhost:5173,http://localhost:5174
+OPENROUTER_API_KEY=<your key>
+OPENROUTER_MODEL=google/gemini-2.0-flash-001
+DATA_FILE=./data/db.json
+LOG_FILE=./data/operations.log
+SESSION_TIMEOUT_MINUTES=5
+SESSION_SECRET=hackathon-secret-key-2024
+BCRYPT_ROUNDS=8
+```
+
+---
+
+## Running Locally
+
+```bash
+# Backend
+cd v2/backend
+npm install
+npm run dev      # nodemon src/server.js  →  http://localhost:4000
+
+# Frontend
+cd v2/frontend
+npm install
+npm run dev      # vite  →  http://localhost:5173
+```
+
+Delete `backend/data/db.json` to reseed demo data.
+
+---
+
+## Coding Conventions
+
+- **Backend is pure ESM** (`"type": "module"`) — use `import/export`, not `require`
+- **No TypeScript** — plain JS throughout
+- **No real DB** — all reads/writes go through `repository.js`; never touch `db.json` directly
+- **Atomic writes** — always use `mutate(fn)` for writes, never call `writeJson` directly
+- **Error handling** — throw `AppError` (or subclass) for user-facing errors; the global handler maps them to HTTP status codes
+- **Session token** — passed as `Authorization: Bearer <token>` header; validated by `requireSession` middleware
+- **No comments on obvious code** — only comment non-obvious invariants or constraints
+- **Tailwind only for styles** — no CSS modules, no inline `style={}`
+- **Framer Motion** for animations — already imported in MessageBubble and ChatScreen
+
+---
+
+## Key Invariants
+
+1. The system prompt is **never** stored in session history — it is prepended fresh on every request.
+2. Tool results are appended as `role: 'tool'` with matching `tool_call_id` — do not change this format.
+3. `conversationHistory` in the session is the raw OpenAI messages array (minus system) — no custom wrapper.
+4. All money amounts are in **PKR** (Pakistani Rupees), stored as plain numbers.
+5. `blockCard` is **permanent** in this demo — no unblock endpoint exists.
+6. Rate limit: 120 requests / 60 s per IP on all `/api/` routes.
