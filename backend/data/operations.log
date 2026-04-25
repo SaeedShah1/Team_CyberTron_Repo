@@ -1,0 +1,470 @@
+{"ts":"2026-04-25T10:22:27.090Z","level":"INFO","message":"No DB file found, seeding sample data","path":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T10:22:27.188Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T10:23:15.425Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:24:02.287Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1002","amount":2050,"refId":"REF-BIL-20260425-1328E9","type":"bill"}
+{"ts":"2026-04-25T10:24:09.595Z","level":"INFO","message":"logout","token":"f6ccd19c…"}
+{"ts":"2026-04-25T10:24:24.508Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:24:50.350Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":3500,"refId":"REF-BIL-20260425-E022B1","type":"bill"}
+{"ts":"2026-04-25T10:25:54.566Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":900,"refId":"REF-TFR-20260425-FEDCD4","type":"transfer"}
+{"ts":"2026-04-25T10:27:45.722Z","level":"INFO","message":"logout","token":"759af23e…"}
+{"ts":"2026-04-25T10:27:51.379Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:28:24.513Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:42:32.523Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T10:44:02.464Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T10:44:41.801Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:44:55.549Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:46:02.791Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T10:46:59.272Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T10:47:48.975Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":9200,"refId":"REF-BIL-20260425-45920F","type":"bill"}
+{"ts":"2026-04-25T10:48:36.131Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":500,"refId":"REF-TFR-20260425-E4CCEF","type":"transfer"}
+{"ts":"2026-04-25T11:02:48.978Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:03:11.622Z","level":"WARN","message":"Tool blockCard error","userId":"user1","error":"Card not found"}
+{"ts":"2026-04-25T11:03:11.630Z","level":"WARN","message":"Tool blockCard error","userId":"user1","error":"Card not found"}
+{"ts":"2026-04-25T11:03:22.988Z","level":"INFO","message":"No DB file found, seeding sample data","path":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:03:31.975Z","level":"WARN","message":"Tool blockCard error","userId":"user1","error":"Card is already blocked."}
+{"ts":"2026-04-25T11:03:31.982Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":1000,"refId":"REF-TFR-20260425-686C7C","type":"transfer"}
+{"ts":"2026-04-25T11:03:55.213Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:03:56.271Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:109:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:03:56.269Z","level":"ERROR","message":"Gemini API error","error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]"}
+{"ts":"2026-04-25T11:04:03.665Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:04:04.589Z","level":"ERROR","message":"Gemini API error","error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]"}
+{"ts":"2026-04-25T11:04:04.589Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:109:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:06:01.435Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:06:18.621Z","level":"ERROR","message":"Gemini API error","error":"[GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent: [400 Bad Request] API key not valid. Please pass a valid API key. [{\"@type\":\"type.googleapis.com/google.rpc.ErrorInfo\",\"reason\":\"API_KEY_INVALID\",\"domain\":\"googleapis.com\",\"metadata\":{\"service\":\"generativelanguage.googleapis.com\"}},{\"@type\":\"type.googleapis.com/google.rpc.LocalizedMessage\",\"locale\":\"en-US\",\"message\":\"API key not valid. Please pass a valid API key.\"}]"}
+{"ts":"2026-04-25T11:06:18.623Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:109:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:13:45.117Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:13:57.705Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:13:59.454Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:13:59.458Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:13:59.827Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:13:59.830Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:00.215Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:00.214Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:14:00.574Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:14:00.575Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:00.920Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:14:00.923Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:01.304Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:01.302Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:14:01.677Z","level":"ERROR","message":"OpenRouter API error","error":"400 google/gemini-2.0-flash is not a valid model ID"}
+{"ts":"2026-04-25T11:14:01.679Z","level":"ERROR","message":"unhandled","error":"AI service unavailable. Please try again in a moment.","stack":"Error: AI service unavailable. Please try again in a moment.\n    at handleChatTurn (file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/chatbot/geminiAgent.js:123:13)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async file:///E:/Avanza/AiHackhaton/Hisaabv2/v2/backend/src/routes/chat.js:55:61"}
+{"ts":"2026-04-25T11:14:59.056Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"E:\\Avanza\\AiHackhaton\\Hisaabv2\\v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:15:07.141Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:15:09.560Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:15:11.500Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T11:15:12.427Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T11:15:13.507Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T11:15:14.617Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:15:15.568Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T11:15:16.800Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T11:15:17.837Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:15:18.757Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T11:15:19.971Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T11:15:21.034Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:20:00.670Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:20:15.256Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:20:15.258Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T11:20:16.513Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T11:20:26.739Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:20:29.692Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"beneficiaryId":"BEN001","fromAccountId":"ACC1001","amount":500}}
+{"ts":"2026-04-25T11:20:29.700Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":500,"refId":"REF-TFR-20260425-0164E1","type":"transfer"}
+{"ts":"2026-04-25T11:20:30.954Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T11:20:45.935Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T11:20:47.021Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T11:21:00.120Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:21:21.555Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:21:22.660Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T11:22:11.895Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:22:32.088Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:22:32.091Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T11:22:33.260Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T11:22:36.170Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:22:39.028Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"amount":500,"beneficiaryId":"BEN001","fromAccountId":"ACC1001"}}
+{"ts":"2026-04-25T11:22:39.031Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":500,"refId":"REF-TFR-20260425-7B423E","type":"transfer"}
+{"ts":"2026-04-25T11:22:40.192Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T11:22:45.523Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:22:46.864Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T11:22:53.160Z","level":"INFO","message":"logout","token":"89adb821…"}
+{"ts":"2026-04-25T11:23:23.701Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:23:38.907Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:23:38.913Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T11:23:40.151Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T11:24:04.232Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:24:10.503Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1002","beneficiaryId":"BEN001","amount":500}}
+{"ts":"2026-04-25T11:24:10.507Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1002","amount":500,"refId":"REF-TFR-20260425-BA5B73","type":"transfer"}
+{"ts":"2026-04-25T11:24:11.815Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T11:25:03.267Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T11:25:05.115Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T11:25:38.766Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:26:13.153Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:26:16.213Z","level":"INFO","message":"tool call","userId":"user1","tool":"blockCard","args":{"cardId":"CARD003"}}
+{"ts":"2026-04-25T11:26:17.250Z","level":"INFO","message":"turn complete","userId":"user1","tools":["blockCard"],"finish":"stop"}
+{"ts":"2026-04-25T11:26:24.540Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T11:26:25.799Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T11:50:46.530Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:51:49.012Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:52:03.912Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T11:52:21.077Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:52:22.370Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T11:52:30.755Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:52:46.460Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:52:54.401Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:53:01.738Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:53:19.963Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T11:53:21.083Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T11:53:34.527Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T11:53:35.762Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T11:53:43.036Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:53:55.067Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T11:54:00.036Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN002","amount":20}}
+{"ts":"2026-04-25T11:54:00.072Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":20,"refId":"REF-TFR-20260425-6000B4","type":"transfer"}
+{"ts":"2026-04-25T11:54:02.783Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T11:59:32.285Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"dataFile":"D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\data\\db.json"}
+{"ts":"2026-04-25T12:16:21.626Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB"}
+{"ts":"2026-04-25T12:17:06.009Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB"}
+{"ts":"2026-04-25T12:18:30.271Z","level":"ERROR","message":"unhandled","error":"Invalid column name 'Password'.","stack":"RequestError: Invalid column name 'Password'.\n    at handleError (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:407:15)\n    at Connection.emit (node:events:517:28)\n    at Connection.emit (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\connection.js:1013:18)\n    at RequestTokenHandler.onErrorMessage (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\handler.js:285:21)\n    at Readable.<anonymous> (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:517:28)\n    at addChunk (node:internal/streams/readable:368:12)\n    at readableAddChunk (node:internal/streams/readable:341:9)\n    at Readable.push (node:internal/streams/readable:278:10)\n    at next (node:internal/streams/from:98:31)"}
+{"ts":"2026-04-25T12:18:35.545Z","level":"ERROR","message":"unhandled","error":"Invalid column name 'Password'.","stack":"RequestError: Invalid column name 'Password'.\n    at handleError (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:407:15)\n    at Connection.emit (node:events:517:28)\n    at Connection.emit (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\connection.js:1013:18)\n    at RequestTokenHandler.onErrorMessage (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\handler.js:285:21)\n    at Readable.<anonymous> (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:517:28)\n    at addChunk (node:internal/streams/readable:368:12)\n    at readableAddChunk (node:internal/streams/readable:341:9)\n    at Readable.push (node:internal/streams/readable:278:10)\n    at next (node:internal/streams/from:98:31)"}
+{"ts":"2026-04-25T12:28:08.099Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB"}
+{"ts":"2026-04-25T12:28:10.800Z","level":"ERROR","message":"unhandled","error":"Invalid column name 'Password'.","stack":"RequestError: Invalid column name 'Password'.\n    at handleError (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:407:15)\n    at Connection.emit (node:events:517:28)\n    at Connection.emit (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\connection.js:1013:18)\n    at RequestTokenHandler.onErrorMessage (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\handler.js:285:21)\n    at Readable.<anonymous> (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:517:28)\n    at addChunk (node:internal/streams/readable:368:12)\n    at readableAddChunk (node:internal/streams/readable:341:9)\n    at Readable.push (node:internal/streams/readable:278:10)\n    at next (node:internal/streams/from:98:31)"}
+{"ts":"2026-04-25T12:41:05.525Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB"}
+{"ts":"2026-04-25T12:41:14.738Z","level":"ERROR","message":"unhandled","error":"Invalid column name 'Password'.","stack":"RequestError: Invalid column name 'Password'.\n    at handleError (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\mssql\\lib\\tedious\\request.js:407:15)\n    at Connection.emit (node:events:517:28)\n    at Connection.emit (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\connection.js:1013:18)\n    at RequestTokenHandler.onErrorMessage (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\handler.js:285:21)\n    at Readable.<anonymous> (D:\\My projects\\Hackathon project\\Hisaab-banking - v2\\backend\\node_modules\\tedious\\lib\\token\\token-stream-parser.js:19:33)\n    at Readable.emit (node:events:517:28)\n    at addChunk (node:internal/streams/readable:368:12)\n    at readableAddChunk (node:internal/streams/readable:341:9)\n    at Readable.push (node:internal/streams/readable:278:10)\n    at next (node:internal/streams/from:98:31)"}
+{"ts":"2026-04-25T12:47:18.529Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T12:47:32.483Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T12:48:37.849Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T12:48:44.322Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T12:48:46.720Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T12:49:39.408Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T12:49:41.370Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T12:50:41.082Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:50:59.290Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN001","amount":50}}
+{"ts":"2026-04-25T12:50:59.590Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":50,"refId":"REF-TFR-20260425-2D123A","type":"transfer"}
+{"ts":"2026-04-25T12:51:01.115Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T12:51:47.002Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:51:53.185Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T12:51:54.802Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T12:52:08.395Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:54:36.094Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:54:43.745Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T12:54:45.346Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T12:55:15.828Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:55:54.047Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:56:14.506Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T12:56:18.769Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T12:56:29.549Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:56:35.842Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:56:40.549Z","level":"INFO","message":"tool call","userId":"user1","tool":"payBill","args":{"billerId":"BIL_KE","accountId":"ACC1002"}}
+{"ts":"2026-04-25T12:56:41.195Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1002","amount":9200,"refId":"REF-BIL-20260425-99B524","type":"bill"}
+{"ts":"2026-04-25T12:56:42.187Z","level":"INFO","message":"turn complete","userId":"user1","tools":["payBill"],"finish":"stop"}
+{"ts":"2026-04-25T12:56:49.519Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T12:56:54.840Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1002"}}
+{"ts":"2026-04-25T12:56:56.017Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T12:57:06.240Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T12:57:08.048Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T12:57:14.241Z","level":"INFO","message":"logout","token":"86797ddd…"}
+{"ts":"2026-04-25T12:58:39.114Z","level":"WARN","message":"login failed","userId":"admin123","reason":"user_not_found"}
+{"ts":"2026-04-25T12:58:47.116Z","level":"WARN","message":"login failed","userId":"admin123","reason":"user_not_found"}
+{"ts":"2026-04-25T12:58:48.028Z","level":"WARN","message":"login failed","userId":"admin123","reason":"user_not_found"}
+{"ts":"2026-04-25T12:58:52.601Z","level":"WARN","message":"login failed","userId":"admin123","reason":"user_not_found"}
+{"ts":"2026-04-25T12:59:26.480Z","level":"INFO","message":"login ok","userId":"user2"}
+{"ts":"2026-04-25T12:59:31.607Z","level":"INFO","message":"tool call","userId":"user2","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T12:59:32.710Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:00:24.128Z","level":"INFO","message":"tool call","userId":"user2","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:00:25.346Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:00:34.743Z","level":"INFO","message":"turn complete","userId":"user2","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:00:50.141Z","level":"INFO","message":"tool call","userId":"user2","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:00:51.388Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:00:57.785Z","level":"INFO","message":"turn complete","userId":"user2","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:02:37.524Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:02:46.749Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:02:57.192Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:04:48.774Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:04:51.845Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:05:36.078Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:05:57.155Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:06:15.478Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:06:32.821Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:10:19.113Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:10:23.006Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:10:28.968Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:10:54.711Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:11:03.504Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:11:12.122Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:11:14.097Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:11:20.361Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBalance","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T13:11:22.315Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBalance"],"finish":"stop"}
+{"ts":"2026-04-25T13:11:36.548Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:11:39.362Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:11:44.447Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:11:50.971Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:11:56.281Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN003","amount":500}}
+{"ts":"2026-04-25T13:11:57.149Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":500,"refId":"REF-TFR-20260425-8ADB58","type":"transfer"}
+{"ts":"2026-04-25T13:11:59.146Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T13:12:03.182Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T13:12:06.927Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T13:12:25.816Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T13:12:28.769Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T13:12:33.021Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:12:37.405Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:13:14.268Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:13:17.575Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:14:07.608Z","level":"INFO","message":"logout","token":"68f1efc1…"}
+{"ts":"2026-04-25T13:14:22.335Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:15:30.103Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:15:32.679Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:16:02.932Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:16:05.617Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:16:21.181Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:16:33.887Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:16:36.149Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN002","amount":200}}
+{"ts":"2026-04-25T13:16:36.524Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":200,"refId":"REF-TFR-20260425-A625D6","type":"transfer"}
+{"ts":"2026-04-25T13:16:40.106Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T13:16:44.380Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T13:16:48.809Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T13:17:08.172Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:17:15.984Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:17:19.663Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:17:40.849Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:17:46.902Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:17:57.671Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:18:14.447Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:18:39.677Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T13:18:46.494Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T13:18:54.254Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:19:01.802Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:19:03.227Z","level":"INFO","message":"tool call","userId":"user1","tool":"payBill","args":{"accountId":"ACC1001","billerId":"BIL_PTCL"}}
+{"ts":"2026-04-25T13:19:03.601Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":3500,"refId":"REF-BIL-20260425-70F188","type":"bill"}
+{"ts":"2026-04-25T13:19:06.470Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","payBill"],"finish":"stop"}
+{"ts":"2026-04-25T13:19:18.209Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T13:19:23.120Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T13:20:03.498Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:20:08.660Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:20:11.585Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:20:21.772Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:21:04.597Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:21:53.351Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:21:55.990Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:22:25.053Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T13:22:25.220Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:22:30.915Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills","getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:30:45.901Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:30:49.396Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:30:53.094Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:31:08.625Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:31:15.769Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:31:20.054Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:31:50.723Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:31:59.252Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:32:18.759Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:32:25.113Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:33:24.676Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:33:31.729Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:33:33.935Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:33:46.750Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:36:26.418Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:36:29.844Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:36:54.398Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:37:04.348Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:37:07.952Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:37:47.228Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:38:02.669Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:38:11.721Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:38:14.839Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:38:46.604Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:38:50.459Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:39:29.031Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:39:37.072Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:39:40.537Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:41:01.952Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:41:05.330Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:41:10.317Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:41:13.015Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:42:02.757Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:42:05.615Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:43:11.719Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:43:19.829Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:43:24.373Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:43:29.218Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:43:31.642Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:44:01.591Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T13:44:05.925Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T13:44:49.690Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:45:17.830Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:45:28.970Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:45:55.007Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:46:00.623Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:46:10.143Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:46:12.331Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:46:15.711Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:46:19.732Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:47:33.343Z","level":"INFO","message":"tool call","userId":"user1","tool":"getSpendingAnalytics","args":{"periodDays":30}}
+{"ts":"2026-04-25T13:47:38.718Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T13:47:59.331Z","level":"INFO","message":"tool call","userId":"user1","tool":"getSpendingAnalytics","args":{"periodDays":2}}
+{"ts":"2026-04-25T13:48:05.123Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T13:51:04.572Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T13:51:09.285Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T13:51:51.991Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T13:51:55.628Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T13:52:11.092Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:52:21.162Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN001","amount":50}}
+{"ts":"2026-04-25T13:52:21.480Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":50,"refId":"REF-TFR-20260425-B5C119","type":"transfer"}
+{"ts":"2026-04-25T13:52:24.672Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T13:52:31.958Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:53:36.604Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:54:50.342Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T13:57:15.749Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T13:57:46.532Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T13:57:50.358Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T13:58:03.408Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:58:09.169Z","level":"INFO","message":"tool call","userId":"user1","tool":"blockCard","args":{"cardId":"CARD002"}}
+{"ts":"2026-04-25T13:58:11.894Z","level":"INFO","message":"turn complete","userId":"user1","tools":["blockCard"],"finish":"stop"}
+{"ts":"2026-04-25T13:58:22.442Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:59:27.283Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T13:59:41.540Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:00:01.407Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:00:36.675Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:00:41.735Z","level":"INFO","message":"logout","token":"ba7baa06…"}
+{"ts":"2026-04-25T14:00:46.466Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:00:51.113Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:00:58.586Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T14:01:03.374Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T14:01:23.403Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:02:19.284Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:02:54.638Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:03:00.218Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:03:02.851Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:03:08.958Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:03:15.486Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:03:37.116Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:03:57.284Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T14:04:00.801Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T14:04:46.590Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:05:17.792Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:05:22.588Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T14:05:26.011Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T14:05:46.617Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:05:56.616Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:06:06.942Z","level":"INFO","message":"tool call","userId":"user1","tool":"getCards","args":{}}
+{"ts":"2026-04-25T14:06:11.121Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getCards"],"finish":"stop"}
+{"ts":"2026-04-25T14:07:26.854Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:07:43.467Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:07:52.420Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:08:03.147Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:08:35.010Z","level":"INFO","message":"tool call","userId":"user1","tool":"getSpendingAnalytics","args":{"periodDays":60}}
+{"ts":"2026-04-25T14:08:40.250Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T14:09:44.131Z","level":"INFO","message":"logout","token":"4cf8df23…"}
+{"ts":"2026-04-25T14:09:48.723Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:10:00.318Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:10:03.225Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:10:21.822Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:10:26.171Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1002"}}
+{"ts":"2026-04-25T14:10:38.445Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T14:10:47.023Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:13:30.962Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:13:39.388Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:13:44.017Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:15:53.023Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:16:12.752Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:16:13.894Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T14:16:25.100Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T14:16:44.261Z","level":"INFO","message":"tool call","userId":"user1","tool":"getSpendingAnalytics","args":{"periodDays":30}}
+{"ts":"2026-04-25T14:16:48.880Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T14:17:12.440Z","level":"INFO","message":"logout","token":"1343e9e4…"}
+{"ts":"2026-04-25T14:17:17.602Z","level":"INFO","message":"login ok","userId":"user2"}
+{"ts":"2026-04-25T14:17:28.314Z","level":"INFO","message":"tool call","userId":"user2","tool":"getSpendingAnalytics","args":{"periodDays":20}}
+{"ts":"2026-04-25T14:17:29.935Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T14:17:46.824Z","level":"INFO","message":"tool call","userId":"user2","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:17:48.098Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:18:01.042Z","level":"INFO","message":"tool call","userId":"user2","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T14:18:06.193Z","level":"INFO","message":"turn complete","userId":"user2","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T14:18:10.111Z","level":"INFO","message":"logout","token":"dcf6f2bf…"}
+{"ts":"2026-04-25T14:18:14.658Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:18:20.487Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T14:18:22.609Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T14:18:31.280Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:18:33.206Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:19:08.198Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:19:27.825Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:19:47.851Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:19:49.882Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:20:10.838Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:20:35.411Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T14:20:40.611Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T14:23:32.507Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:23:41.734Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:24:56.637Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:25:02.130Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:25:05.730Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:25:16.686Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:28:34.473Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T14:28:37.157Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T14:28:52.258Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:29:01.471Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:29:08.372Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:29:10.672Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:29:36.094Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T14:29:54.014Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T14:30:19.895Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T14:30:21.648Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T14:31:23.030Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:31:25.864Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:32:17.558Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:32:32.892Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:32:36.778Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:32:51.550Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:33:04.996Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:33:08.081Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:33:17.903Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T14:33:19.800Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T14:33:24.834Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:33:26.357Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN002","amount":5000}}
+{"ts":"2026-04-25T14:33:26.615Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":5000,"refId":"REF-TFR-20260425-8FD9E0","type":"transfer"}
+{"ts":"2026-04-25T14:33:31.028Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts","transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T14:35:06.709Z","level":"INFO","message":"logout","token":"0e0b274b…"}
+{"ts":"2026-04-25T14:35:53.025Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:36:15.691Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:36:16.989Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:36:28.287Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T14:36:29.941Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T14:36:42.372Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:36:43.875Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:36:48.218Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:37:39.610Z","level":"INFO","message":"logout","token":"e8b31c5f…"}
+{"ts":"2026-04-25T14:40:22.838Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:40:26.716Z","level":"INFO","message":"Hisaab backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:40:31.714Z","level":"INFO","message":"BanklifyAi backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:41:31.917Z","level":"INFO","message":"BanklifyAi backend listening on :4000","env":"development","sessionTimeoutMin":5,"database":"ConvoBankDB2"}
+{"ts":"2026-04-25T14:44:31.267Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:44:48.859Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:44:50.935Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:45:04.980Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T14:45:07.414Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T14:45:12.620Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:45:16.344Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:45:23.946Z","level":"INFO","message":"tool call","userId":"user1","tool":"payBill","args":{"accountId":"ACC1001","billerId":"BIL_PTCL"}}
+{"ts":"2026-04-25T14:45:24.492Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":3500,"refId":"REF-BIL-20260425-32863F","type":"bill"}
+{"ts":"2026-04-25T14:45:26.303Z","level":"INFO","message":"turn complete","userId":"user1","tools":["payBill"],"finish":"stop"}
+{"ts":"2026-04-25T14:45:53.283Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T14:46:06.851Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
+{"ts":"2026-04-25T14:46:43.849Z","level":"INFO","message":"tool call","userId":"user1","tool":"getSpendingAnalytics","args":{"periodDays":30}}
+{"ts":"2026-04-25T14:46:50.559Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getSpendingAnalytics"],"finish":"stop"}
+{"ts":"2026-04-25T14:50:39.900Z","level":"INFO","message":"logout","token":"edd1c1a1…"}
+{"ts":"2026-04-25T14:50:45.291Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:51:01.569Z","level":"INFO","message":"logout","token":"cd15953e…"}
+{"ts":"2026-04-25T14:53:14.130Z","level":"INFO","message":"login ok","userId":"user1"}
+{"ts":"2026-04-25T14:53:40.810Z","level":"INFO","message":"tool call","userId":"user1","tool":"getAccounts","args":{}}
+{"ts":"2026-04-25T14:53:43.040Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getAccounts"],"finish":"stop"}
+{"ts":"2026-04-25T14:54:03.699Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBills","args":{}}
+{"ts":"2026-04-25T14:54:06.548Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBills"],"finish":"stop"}
+{"ts":"2026-04-25T14:54:24.744Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:54:41.892Z","level":"INFO","message":"tool call","userId":"user1","tool":"payBill","args":{"accountId":"ACC1001","billerId":"BIL_PTCL"}}
+{"ts":"2026-04-25T14:54:42.942Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":3500,"refId":"REF-BIL-20260425-35C2F4","type":"bill"}
+{"ts":"2026-04-25T14:54:45.158Z","level":"INFO","message":"turn complete","userId":"user1","tools":["payBill"],"finish":"stop"}
+{"ts":"2026-04-25T14:55:12.156Z","level":"INFO","message":"tool call","userId":"user1","tool":"getBeneficiaries","args":{}}
+{"ts":"2026-04-25T14:55:14.463Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getBeneficiaries"],"finish":"stop"}
+{"ts":"2026-04-25T14:55:27.665Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:55:35.524Z","level":"INFO","message":"turn complete","userId":"user1","tools":[],"finish":"stop"}
+{"ts":"2026-04-25T14:55:43.712Z","level":"INFO","message":"tool call","userId":"user1","tool":"transferFunds","args":{"fromAccountId":"ACC1001","beneficiaryId":"BEN002","amount":1000}}
+{"ts":"2026-04-25T14:55:44.153Z","level":"INFO","message":"debit ok","userId":"user1","accountId":"ACC1001","amount":1000,"refId":"REF-TFR-20260425-09C873","type":"transfer"}
+{"ts":"2026-04-25T14:55:46.225Z","level":"INFO","message":"turn complete","userId":"user1","tools":["transferFunds"],"finish":"stop"}
+{"ts":"2026-04-25T14:59:39.820Z","level":"INFO","message":"tool call","userId":"user1","tool":"getTransactions","args":{"accountId":"ACC1001"}}
+{"ts":"2026-04-25T14:59:51.435Z","level":"INFO","message":"turn complete","userId":"user1","tools":["getTransactions"],"finish":"stop"}
